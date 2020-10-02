@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <title>Add Interest</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../views/mypage_bootstrap.html">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav">
+                        <a href="https://www.github.com/AngusFiedler"><img
+                                src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                                style="width: 30px; height: 30px;"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container pt-5">
+        <h2>Add New Interest</h2>
+    <form>
+      <div class="form-group">
+        <label for="inputInterestName">Interest Name</label>
+        <input type="name" class="form-control" id="interestName" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <label for="inputAboutInterest">Text About Interest</label>
+        <textarea class="form-control" id="aboutInterest" rows="4"></textarea>
+      </div>
+      <div class="form-row">
+        <div class="col">
+          <label for="uploadImage">Upload Local Image: </label>
+          <input type="file" class="form-control-file" id="imageUpload">
+        </div>
+        <div class="col">
+          <label for="tweetSelect">Select Number of Tweets to Display</label>
+          <select class="form-control" id="selectTweets">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="interestGuage">On a scale of 1-5, how intersted in this are you?</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+        <label class="form-check-label" for="inlineCheckbox3">3</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+        <label class="form-check-label" for="inlineCheckbox4">4</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+        <label class="form-check-label" for="inlineCheckbox5">5</label>
+      </div>
+      <div class="form-row">
+        <label for="adminVerify">Log in to Finish Submitting: </label>
+        <div class="col">
+          <input type="username" class="form-control" id="userVerify" placeholder="Username">
+        </div>
+        <div class="col">
+          <input type="password" class="form-control" id="userPass" placeholder="Password">
+        </div>
+      </div>
+    </form>
+    <a href="mypage_bootstrap.html">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </a>
+    </main>
+</body>
+
+</html>
